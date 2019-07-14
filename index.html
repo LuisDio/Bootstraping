@@ -399,11 +399,17 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- <script>
+    <script>
         $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
+            $('#mycarousel').carousel({interval: 2000});
+            $('#carousel-pause').click(function() {
+                $('#carousel').carouse('pause');
+            });
+            $('#carousel-play').click(function() {
+                $('#carousel').carouse('cycle');
+            });
         });
-    </script> -->
+    </script>
 </body>
 
 </html>
