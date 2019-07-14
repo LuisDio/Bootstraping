@@ -401,12 +401,12 @@
 
     <script>
         $(document).ready(function() {
-            $('#mycarousel').carousel({interval: 2000});
+            $('#mycarousel').carousel({ interval: 2000 });
             $('#carousel-pause').click(function() {
-                $('#carousel').carouse('pause');
+                $('#mycarousel').carousel('pause');
             });
             $('#carousel-play').click(function() {
-                $('#carousel').carouse('cycle');
+                $('#mycarousel').carousel('cycle');
             });
         });
     </script>
