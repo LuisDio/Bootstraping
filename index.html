@@ -31,8 +31,9 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-sign-in"></span>Login
+                    <!--Login button here-->
+                    <a id="loginBtn" ><!--data-toggle="modal" data-target="#loginModal"-->
+                        <span class="fa fa-sign-in" data-target="#loginModal"></span>Login
                     </a>
                 </span>
             </div>
@@ -181,7 +182,7 @@
                 <div class="col-12 col-sm align-self-center">
                     <div>
                         <!--Reserve Table button here-->
-                        <a class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#reserveModal" role="button">Reserve Table</a>
+                        <a class="btn btn-warning btn-lg btn-block" id="reserveBtn" data-target="#reserveModal" role="button">Reserve Table</a> <!--data-toggle="modal" data-target="#reserveModal"-->
                     </div>
                 </div>
             </div>
@@ -397,6 +398,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script>
+
         $(document).ready(function() {
             $('#mycarousel').carousel({ interval: 2000 });
             $('#carouselButton').click(function() {
@@ -413,7 +415,17 @@
                 }
                     
             });
+
+            $("#loginBtn").click(function(){
+                $("#loginModal").modal();
+            });
+
+            $("#reserveBtn").click(function(){
+                $("#reserveModal").modal();
+            });
+
         });
+        
     </script>
 </body>
 
