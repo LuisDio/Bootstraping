@@ -78,17 +78,16 @@ body{
 .modal-header {
     background:$background-dark;
     
+    .modal-title {
+        color: floralwhite;
+    }
+    .close {
+        color: floralwhite;
+    }
+    
 }
 
 .modal-body {
     background: $background-pale;
 
-}
-
-.modal-title {
-    color: $lt-gray;
-}
-
-.close {
-    color: $lt-gray;
 }

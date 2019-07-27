@@ -33,7 +33,6 @@
                 <span class="navbar-text">
                     <!--Login button here-->
                     <a id="loginBtn" > 
-                        <!--data-toggle="modal" data-target="#loginModal"-->
                         <span class="fa fa-sign-in"></span>Login
                     </a>
                 </span>
@@ -142,9 +141,6 @@
                                     </label>
                                 </div>
                             </div>
-                            <!-- <div class="col-sm-4">
-                                <button type="button" class="btn btn-danger">Danger</button>
-                            </div> -->
                         </div>
                     
                         <div class="form-group row">
@@ -183,7 +179,6 @@
                 <div class="col-12 col-sm align-self-center">
                     <div>
                         <!--Reserve Table button here-->
-                        <!--data-toggle="modal" data-target="#reserveModal"-->
                         <a class="btn btn-warning btn-lg btn-block" id="reserveBtn" role="button">Reserve Table</a>
                     </div>
                 </div>
@@ -419,11 +414,11 @@
             });
 
             $("#loginBtn").click(function(){
-                $("#loginModal").modal();
+                $("#loginModal").modal('show');
             });
 
             $("#reserveBtn").click(function(){
-                $("#reserveModal").modal();
+                $("#reserveModal").modal('show');
             });
 
         });
